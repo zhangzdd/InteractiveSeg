@@ -126,8 +126,8 @@ class SuggestiveAnnotationModel(nn.Module):
         else:
             return out
 
-model = SuggestiveAnnotationModel(n_input_channels=3, n_classes=3).cuda()
-inp = torch.rand((2, 3, 512, 512)).cuda()
-out = model(inp)
+# model = SuggestiveAnnotationModel(n_input_channels=3, n_classes=3).cuda()
+# inp = torch.rand((2, 3, 512, 512)).cuda()
+# out = model(inp)
 
 
