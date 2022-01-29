@@ -15,7 +15,7 @@ labelled_img_list.log: raw_data.json
 	do \
 		echo $$i >> logs/debug.log; \
 		echo "Generating result for model $$i / $(NUM_MODELS)" >> logs/run.log; \
-		python3 forward_pass.py raw_data.json "model_$$i" $(ROUND); \
+		python3 forward_pass.py raw_data.json "model_$$i" $(ROUND) >> logs/run.log; \
 	done 
 	ls data/initial_label >> logs/labelled_img_list.log
 
