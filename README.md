@@ -1,3 +1,5 @@
-# pytorch-suggestive-annotation-a-deep-active-learning-framework-for-biomedical-image-segmentation
+# Interactive Learning Framework
 
-This is an PyTorch implementation of the model used in the paper [Suggestive Annotation: A Deep Active Learning Framework for Biomedical Image Segmentation](https://arxiv.org/abs/1706.04737) though the model architecture in the model was very vague so I might have misinterpreted it, in which case please raise a pull request!
+This is the basic working logic \& framework for the kidney stone interactive segmentation project. Got the idea from a 2015 paper and tried to refine the workflow for more flexible applications.  
+
+Note: The repository is not yet complete and subject to any future changes.
