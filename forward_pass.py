@@ -3,9 +3,10 @@ from model import *
 from torchvision.utils import save_image
 import torchvision
 import json
-
+from u_net import *
 raw_data, model_name,round = sys.argv[1:]
-submodel = SuggestiveAnnotationModel(n_input_channels=3, n_classes=3)
+#submodel = SuggestiveAnnotationModel(n_input_channels=3, n_classes=3)
+submodel = UNet(n_channels=3,n_classes=3)
 #input = read from raw data
 data_input = []
 with open(raw_data) as f:
